@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Nunito', 'Varela Round', Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.wrap {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav {
+    background-color: #a0bed0;
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    padding: 25px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav__link {
+    color: #fff;
+    padding-left: 40px;
+}
+
+.nav__mobile {
+    display: none;
+}
+
+main {
+    padding-top: 69px;
+}
+
+.banner {
+    background-image: url("../images/foto-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.banner__title {
+    font-size: 105px;
+    text-transform: uppercase;
+    font-family: 'Varela Round';
+    letter-spacing: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.banner__subtitle {
+    font-size: 22px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.btn {
+    background-color: #829dad;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 40px 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #36b0e0;
+    transition: .3s;
+}
+
+.about {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(39, 37, 37, 0.863);
+    padding: 30px 20px;
+}
+
+.about__title {
+    font-size: 22px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.about__description {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+#destination {
+    margin: 0 20px;
+}
+
+.destination {
+    display: flex;
+    align-items: center;
+}
+.destination--siberia {
+    margin: 45px 0;
+}
+
+.destination__wrapper-siberia-img {
+    width: 100%;
+}
+
+.destination--siberia__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.destination__text {
+    text-align: initial;
+    width: 35%;
+    padding: 5px 10px;
+    border-left: 5px solid #829dad;
+}
+
+.destination__text h3 {
+    font-family: 'Varela Round';
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.destination__text p {
+    color: rgba(0,0,0,0.5);
+}
+
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.destination--black {
+    background-color: #161616;
+    color: #fff;
+}
+
+.destination__wrapper-img {
+    width: 50%;
+}
+
+.destination__img {
+    width: 100%;
+    height: auto;
+}
+
+.destination__description {
+    width: 50%;
+    padding: 40px;
+}
+
+.destination__description--antarctida{
+    text-align: right;
+}
+
+.destination__title {
+    font-family: 'Varela Round';
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.destination__paragraph {
+    color: rgba(255,255,255,0.5)
+}
+
+.footer {
+    background-color: #161616;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer a {
+    color: #829dad;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.footer__socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.footer__socialmedia > li:not(:last-child) {
+    margin-right: 20px;
+}
+
+small {
+    color: rgba(255,255,255,0.5);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 1065px) and (orientation: landscape) {
+    .banner__title {
+        margin-top: 40px;
+        font-size: 95px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner__title {
+        font-size: 75px;
+    }
+
+    .banner__subtitle {
+        font-size: 20px;
+    }
+} 
+
+@media screen and (max-width: 998px) {
+    .wrap {
+        max-width: 635px;
+    }
+
+    .destination {
+        flex-direction: column;
+    }
+
+    .destination-container .destination:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .destination__wrapper-img {
+        width: 100%;
+    }
+
+    .destination__description {
+        width: 75%;
+    }
+
+    .destination__text {
+        text-align: center;
+        width: 50%;
+        margin-top: 25px;
+        border-left: 0;
+    }
+
+    .destination__description {
+        text-align: center;
+    }
+
+    .destination span {
+        display: none;
+    }
+
+@media screen and (max-width: 825px) {
+    .nav {
+        padding: 15px 25px;
+    }
+
+    main {
+        padding-top: 48px;
+    }
+
+    .banner__title {
+        font-size: 65px;
+    }
+
+    .banner__subtitle {
+        font-size: 17px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 12px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .banner__title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .banner__title {
+        font-size: 60px;
+    }
+
+    .banner__subtitle {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .banner__title {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .banner__title {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner__title {
+        font-size: 45px;
+    }
+
+    .destination__description {
+        width: 100%;
+    }
+
+    .destination__text {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .nav {
+        background-color: #fff;
+        padding: 8px 25px
+    }
+    
+    .nav__menu li:not(:last-child) {
+        display: none;
+    }
+
+    .nav__mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .banner {
+        height: 65vh;
+    }
+
+    .about__title {
+        font-size: 21px;
+        width: 100%;
+    }
+
+    .about__description {
+        width: 100%;
+    }
+
+    .destination--siberia__img {
+        max-width: 100%;
+    }
+
+    .destination__text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .banner__subtitle {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    .banner__title {
+        font-size: 45px;
+        margin-top: 75px;
+    }
+
+    .banner__subtitle {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 11px;
+        margin: 30px 0 75px 0;
+    }
+
+    .destination__paragraph {
+        font-size: 12px;
+    }
+}
